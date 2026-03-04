@@ -20,11 +20,8 @@ USE campus_it;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `campus_it`
---
-
---
--- Déchargement des données de la table `application`
+-- 1. Déchargement des données de la table `application`
+-- (insérée en premier car consommation référence app_id)
 --
 
 INSERT INTO `application` (`app_id`, `nom`) VALUES
@@ -38,7 +35,18 @@ INSERT INTO `application` (`app_id`, `nom`) VALUES
 (8, 'Wiki');
 
 --
--- Déchargement des données de la table `consommation`
+-- 2. Déchargement des données de la table `ressource`
+-- (insérée en deuxième car consommation référence res_id)
+--
+
+INSERT INTO `ressource` (`res_id`, `nom`, `unite`) VALUES
+(1, 'Stockage', 'Go'),
+(2, 'CPU', 'vCPU'),
+(3, 'Réseau', 'Go');
+
+--
+-- 3. Déchargement des données de la table `consommation`
+-- (insérée en dernier car elle référence application ET ressource)
 --
 
 INSERT INTO `consommation` (`conso_id`, `app_id`, `res_id`, `mois`, `volume`) VALUES
@@ -379,14 +387,6 @@ INSERT INTO `consommation` (`conso_id`, `app_id`, `res_id`, `mois`, `volume`) VA
 (335, 8, 2, '2026-02-01', 9.30),
 (336, 8, 3, '2026-02-01', 115.80);
 
---
--- Déchargement des données de la table `ressource`
---
-
-INSERT INTO `ressource` (`res_id`, `nom`, `unite`) VALUES
-(1, 'Stockage', 'Go'),
-(2, 'CPU', 'vCPU'),
-(3, 'Réseau', 'Go');
 
 COMMIT;
 
