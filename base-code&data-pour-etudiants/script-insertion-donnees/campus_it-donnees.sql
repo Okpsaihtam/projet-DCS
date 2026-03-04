@@ -11,6 +11,8 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+-- Sélection de la base de données campus_it
+USE campus_it;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -385,6 +387,7 @@ INSERT INTO `ressource` (`res_id`, `nom`, `unite`) VALUES
 (1, 'Stockage', 'Go'),
 (2, 'CPU', 'vCPU'),
 (3, 'Réseau', 'Go');
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
