@@ -4,7 +4,7 @@
 // et du Réseau (res_id=3) mois par mois
 // entre janvier et juin 2025, au format JSON
 
-require 'connexion.php';
+require __DIR__ . '/connexion.php';
 
 // On filtre uniquement sur Stockage et Réseau
 // On groupe par mois et par ressource

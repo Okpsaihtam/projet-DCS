@@ -3,7 +3,7 @@
 // Retourne la consommation totale du campus mois par mois
 // entre janvier et juin 2025, au format JSON
 
-require 'connexion.php';
+require __DIR__ . '/connexion.php';
 
 // On additionne toutes les consommations par mois
 // sur la période janvier à juin 2025

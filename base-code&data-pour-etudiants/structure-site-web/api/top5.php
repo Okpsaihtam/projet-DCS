@@ -3,7 +3,7 @@
 // Retourne les 5 applications ayant le plus consommé
 // toutes ressources et tous mois confondus, au format JSON
 
-require 'connexion.php';
+require __DIR__ . '/connexion.php';
 
 // On additionne les volumes par application
 // On trie du plus grand au plus petit et on prend les 5 premiers
