@@ -3,7 +3,7 @@
 // Ce fichier est inclus dans tous les fichiers de l'API
 // Il suffit de modifier ici si les identifiants changent
 
-$host     = 'localhost';
+$host     = 'localhosts';
 $dbname   = 'campus_it';
 $user     = 'root';
 $password = ''; // À adapter avec le mot de passe MariaDB de la VM
