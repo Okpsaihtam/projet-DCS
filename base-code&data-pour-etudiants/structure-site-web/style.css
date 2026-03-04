@@ -1,40 +1,72 @@
+/* ===== STYLE GÉNÉRAL ===== */
 body {
-  font-family: Arial;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-/* Style the tab */
+h1 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-style: italic;
+}
+
+/* ===== BARRE D'ONGLETS ===== */
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #1a1a2e;
+    border-radius: 5px 5px 0 0;
 }
 
-/* Style the buttons inside the tab */
+/* Boutons des onglets */
 .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+    background-color: inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 15px;
 }
 
-/* Change background color of buttons on hover */
+/* Bouton au survol */
 .tab button:hover {
-  background-color: #ddd;
+    background-color: #16213e;
 }
 
-/* Create an active/current tablink class */
+/* Bouton onglet actif */
 .tab button.active {
-  background-color: #ccc;
+    background-color: #0f3460;
+    border-bottom: 3px solid #e94560;
 }
 
-/* Style the tab content */
+/* ===== CONTENU DES ONGLETS ===== */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+/* ===== CONTENEUR DES GRAPHIQUES ===== */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
 }
